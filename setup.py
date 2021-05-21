@@ -11,5 +11,11 @@ setup(
     description='Dan\'s Utilities',
     required=[
         "pandas>=1.2"
-    ]
+    ],
+    extras={
+        "tests": [
+            "pytest"
+        ]
+    }
+
 )
