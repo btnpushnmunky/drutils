@@ -3,7 +3,8 @@ import pandas as pd
 
 def split_date_column(df, date_column):
     """
-    Split the `date_column` of DataFrame `df` into month, day and year columns.
+    Split the `date_column` of DataFrame `df` into month, day and year columns. If `date_column` is
+    not datetime64[ns], it will be converted.
 
     Parameters
     ----------
